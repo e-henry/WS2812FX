@@ -165,13 +165,13 @@ uint32_t WS2812FX::getColor(void) {
   return _color; 
 }
 
-const char* WS2812FX::getModeName(uint8_t m) {
+/*const char* WS2812FX::getModeName(uint8_t m) {
   if(m < MODE_COUNT) {
     return _name[m];
   } else {
     return "";
   }
-}
+}*/
 
 /* #####################################################
 #

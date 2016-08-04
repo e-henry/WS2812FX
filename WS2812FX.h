@@ -165,7 +165,7 @@ class WS2812FX : public Adafruit_NeoPixel {
       _mode[FX_MODE_FIREWORKS]             = &WS2812FX::mode_fireworks;
       _mode[FX_MODE_FIREWORKS_RANDOM]      = &WS2812FX::mode_fireworks_random;
 
-      _name[FX_MODE_STATIC]                = "Static";
+/*      _name[FX_MODE_STATIC]                = "Static";
       _name[FX_MODE_BLINK]                 = "Blink";
       _name[FX_MODE_BREATH]                = "Breath";
       _name[FX_MODE_COLOR_WIPE]            = "Color Wipe";
@@ -209,6 +209,7 @@ class WS2812FX : public Adafruit_NeoPixel {
       _name[FX_MODE_COMET]                 = "Comet";
       _name[FX_MODE_FIREWORKS]             = "Fireworks";
       _name[FX_MODE_FIREWORKS_RANDOM]      = "Fireworks Random";
+      */
 
       _mode_index = DEFAULT_MODE;
       _speed = DEFAULT_SPEED;
@@ -250,8 +251,8 @@ class WS2812FX : public Adafruit_NeoPixel {
     uint32_t
       getColor(void);
 
-    const char*
-      getModeName(uint8_t m);
+    //const char*
+    //  getModeName(uint8_t m);
 
   private:
 
@@ -325,8 +326,8 @@ class WS2812FX : public Adafruit_NeoPixel {
     unsigned long
       _mode_last_call_time;
 
-    const char*
-      _name[MODE_COUNT];
+/*    const char*
+      _name[MODE_COUNT];*/
 
     mode_ptr
       _mode[MODE_COUNT];
